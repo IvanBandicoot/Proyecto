@@ -9,7 +9,7 @@
 </head>
 <body>
   
-  <form class="formulario" for="form" name="formu" ng-model="formulario" novalidate>
+  <form class="formulario" for="form" name="formu" ng-model="formulario">
 
    <div class="contenedor" ng-controller="Controlador">
 
@@ -42,21 +42,33 @@
       </div>
     <!--Validar Contraseña-->
       <div class="registro">
-        <input type="password" name="password" value="" placeholder="Contraseña" required ng-model="contraseña">
-        
+        <input type="password" name="password" minlength="3" placeholder="Contraseña" required ng-model="contrase.validar">    
+        <div ng-show="!contrase.validar && formu.$submitted" class="error">
+          <p>Debe llenar este campo.</p>
+        </div>
       </div>
-
       <div class="registro">
-        <input type="password" name="password1" value="" placeholder="Confirme su Contraseña" required ng-model="confirmar">
-
+        <input type="password" name="password1" placeholder="Confirme su Contraseña" required ng-model="confirmar">
+        <div ng-show="!confirmar && formu.$submitted" class="error">
+         <p>Debe llenar este campo.</p>
+        </div>
+        <div ng-if="confirmar">
+          <div ng-if="confirmar != contrase.validar" class="error">
+           <p>No coinciden</p>
+          </div>
+        </div>
       </div>
     <!--Validar Contraseña-->
       <div class="fecha registro">
-        <input type="date" name="" value="" class="data" required>
+        <input type="date" name="fecha"class="data" required ng-model="fecha">
+        <div ng-show="!fecha && formu.$submitted" class="error">
+          <p>LLene su fecha de nacimiento.</p>
+        </div>
       </div>
 
         <div class="buton">
           <button type="submit"
+                  ng-disabled="formu.$invalid"
                   class="boton">
             REGISTRAR
           </button>
@@ -65,6 +77,7 @@
     </div>
 
   </div>
+ 
   <script src="Datos.js"></script>
 </form>
 </body>
