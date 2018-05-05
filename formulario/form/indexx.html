@@ -32,18 +32,23 @@
         </div>
       </div>
       <div class="registro">
-        <input type="email" name="email" placeholder="Email" required ng-model="email.validar" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-        <div ng-show="formu.email.$error.pattern && formu.$submitted" class="error">
+        <input type="email" name="email" placeholder="Email" minlength="1" required ng-model="email.validar" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <div ng-show="!email.validar && formu.$submitted" class="error">
+            <p>Debe colocar su email</p>
+        </div>
+        <div ng-show="formu.email.$error.pattern" class="error">
           <p>El formato de correo esta mal escrito.</p>
         </div>
       </div>
     <!--Validar Contraseña-->
       <div class="registro">
         <input type="password" name="password" value="" placeholder="Contraseña" required ng-model="contraseña">
+        
       </div>
 
       <div class="registro">
         <input type="password" name="password1" value="" placeholder="Confirme su Contraseña" required ng-model="confirmar">
+
       </div>
     <!--Validar Contraseña-->
       <div class="fecha registro">
