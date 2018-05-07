@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		MashupApp
+	</title>
+	<link rel="stylesheet" href="public/css/index.css">
+	 <link rel="shorcut icon" type="image/x-icon" href="assets/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Anton|Do+Hyeon|Fjalla+One|Gugi|Raleway|Roboto|Pacifico" rel="stylesheet">
+</head>
+<body>
+	<header class="header-page">
+		<div class="container">
+			<div class="logotipo"><a href="">Mashup<span class="second-color">App </span></a></div>
+			<div class="navbar-toggler">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<nav>
+				<ul>
+					<li id="toEnter" class="toEnter"><a href="">Entrar</a></li>
+					<li id="toRegister" class="toRegister"><a href="">Registrar</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="main">
+		<section class="information">
+			<!-- HAY QUE BORRAR ESTO APENAS SE NOS OCURRA ALGO -->
+			<h1 id="msg" style="text-align:center; margin-top:180px;font-size: 48px">
+			</h1>
+		</section>
+		<section id="whatispoogle" class="login">
+			
+		</section>
+		<section class="signup active">
+			<form class="formulario" for="form" name="formu" ng-model="formulario" novalidate>
+				<div class="contenedor" ng-controller="Controlador">
+					<h2>Create una <span>Cuenta!</span></h2>
+					<div class="main">
+						<div class="registro">
+							<input type="text" name="nombre" minlength="3" placeholder="Nombre" required ng-model="nombre.validar">
+         				<div ng-show="!nombre.validar && formu.$submitted" class="error">
+          				<p>Debe llenar este campo.</p>
+         			</div>
+      			</div>
+				<div class="registro">
+        			<input type="text" name="apellido" minlength="4" placeholder="Apellido" required ng-model="apellido.validar">
+        			<div ng-show="!apellido.validar && formu.$submitted" class="error">
+          				<p>Debe llenar este campo.</p>
+        			</div>
+      			</div>
+      			<div class="registro">
+			        <input type="email" name="email" placeholder="Email" required ng-model="email.validar" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+			        <div ng-show="formu.email.$error.pattern && formu.$submitted" class="error">
+			          <p>El formato de correo esta mal escrito.</p>
+			        </div>
+			      </div>
+
+			      <div class="registro">
+			        <input type="password" name="password" value="" placeholder="Contraseña" required ng-model="contraseña">
+			      </div>
+
+			      <div class="registro">
+			        <input type="password" name="password1" value="" placeholder="Confirme su Contraseña" required ng-model="confirmar">
+			      </div>
+
+			      <div class="fecha registro">
+			        <input type="date" name="" value="" class="data" required>
+			      </div>
+
+			        <div class="buton">
+			          <button type="submit"
+			                  class="boton">
+			            REGISTRAR
+			          </button>
+			        </div>
+			    </div>
+			  </div>
+		</section>
+	</section>
+	<footer>
+		<div class="container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis dolor voluptate, deleniti soluta iusto ea quis aut nisi quasi voluptas, vel suscipit neque harum commodi quas sequi eveniet! Tempore.
+		</div>
+	</footer>
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.js"
+  		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  		crossorigin="anonymous">
+  	</script>
+
+  	<script src="public/js/index.js"></script>
+  	<script src="public/js/signup.js"></script>
+</body>
+</html>
