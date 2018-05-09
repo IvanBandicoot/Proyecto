@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
 	<title>registro</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <link rel="shorcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Graduate" rel="stylesheet">
+  <link rel="shorcut icon" type="image/x-icon" href="favicon-16x16.png">
   <link rel="stylesheet" type="text/css" href="min.css">
 </head>
 <body>
   
-  <form class="formulario" for="form" name="formu" ng-model="formulario" novalidate>
+  <form class="formulario" for="form" name="formu" ng-model="formulario">
 
    <div class="contenedor" ng-controller="Controlador">
 
@@ -32,26 +33,43 @@
         </div>
       </div>
       <div class="registro">
-        <input type="email" name="email" placeholder="Email" required ng-model="email.validar" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-        <div ng-show="formu.email.$error.pattern && formu.$submitted" class="error">
+        <input type="email" name="email" placeholder="Email" minlength="1" required ng-model="email.validar" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <div ng-show="!email.validar && formu.$submitted" class="error">
+            <p>Debe colocar su email</p>
+        </div>
+        <div ng-show="formu.email.$error.pattern" class="error">
           <p>El formato de correo esta mal escrito.</p>
         </div>
       </div>
-
+    <!--Validar Contraseña-->
       <div class="registro">
-        <input type="password" name="password" value="" placeholder="Contraseña" required ng-model="contraseña">
+        <input type="password" name="password" minlength="3" placeholder="Contraseña" required ng-model="contrase.validar">    
+        <div ng-show="!contrase.validar && formu.$submitted" class="error">
+          <p>Debe llenar este campo.</p>
+        </div>
       </div>
-
       <div class="registro">
-        <input type="password" name="password1" value="" placeholder="Confirme su Contraseña" required ng-model="confirmar">
+        <input type="password" name="password1" placeholder="Confirme su Contraseña" required ng-model="confirmar">
+        <div ng-show="!confirmar && formu.$submitted" class="error">
+         <p>Debe llenar este campo.</p>
+        </div>
+        <div ng-if="confirmar">
+          <div ng-if="confirmar != contrase.validar" class="error">
+           <p>No coinciden</p>
+          </div>
+        </div>
       </div>
-
+    <!--Validar Contraseña-->
       <div class="fecha registro">
-        <input type="date" name="" value="" class="data" required>
+        <input type="date" name="fecha"class="data" required ng-model="fecha">
+        <div ng-show="!fecha && formu.$submitted" class="error">
+          <p>LLene su fecha de nacimiento.</p>
+        </div>
       </div>
 
         <div class="buton">
           <button type="submit"
+                  ng-disabled="formu.$invalid"
                   class="boton">
             REGISTRAR
           </button>
@@ -60,6 +78,7 @@
     </div>
 
   </div>
+ 
   <script src="Datos.js"></script>
 </form>
 </body>

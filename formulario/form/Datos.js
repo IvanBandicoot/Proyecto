@@ -1,6 +1,4 @@
 var app = angular.module('Formulario', []);
-app.controller('Controlador', ['$scope', function($scope){
-    $scope.usuario={
-     
-    };
+app.controller('Controlador', ['$scope',function($scope){
+
 }]);
