@@ -6,7 +6,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url('1.jpg')#000 no-repeat center top;
+  background: url('../img/1.jpg')#000 no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

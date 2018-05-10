@@ -8,7 +8,7 @@
 }
 
 body{
-  background: #ccc url(escheresque_ste_@2X.png);
+  background: #ccc url(../img/escheresque_ste_@2X.png);
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
