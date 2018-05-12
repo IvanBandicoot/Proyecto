@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+body{
+    background-color: rgb(6, 64, 87);
+}
+
+.contenido {
+    width:100%;
+    background-color:rgb(188, 146, 194);
+}
+  
+.contenido header .titulo{
+    margin: 10px 30px;
+}
+  
+header {
+    width:100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+  
+header h1{
+    margin-left: 30px;
+    font-family: 'Graduate', sans-serif;
+    font-size: 40px;
+    color: rgb(20, 7, 90)/*613DC1 00FFF5*/;
+}
+  
+header a{
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Ubuntu',sans-serif;
+}
+header a:hover{
+    color:  rgb(20, 7, 90);
+    font-size: 30px;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sidebar{
+    margin: 50px;
+    padding: 10px 10px;
+    width: 30%;
+    background-color: rgb(35, 59, 51);
+}
+
+.sidebar .nombre h2{
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 30px;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+     color: rgb(224, 214, 214);
+     margin-top: 20px;
+}
+
+.sidebar .image {
+    padding: 20px;
+}
+
+.sidebar .image img{
+    width: 300px;
+    
+}
+
+.sidebar .navegacion{
+    text-align: center;
+    background-color: rgb(73, 69, 67);
+    padding: 20px;
+}
+
+.sidebar .navegacion ul{
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .navegacion ul li{
+    list-style: none;
+    display: block;
+    margin: 10px;
+    outline: 1px solid #2a2a2a;
+    transition-property:border;
+    transition-duration: 0.3s;
+}
+.sidebar .navegacion ul li:hover{
+    background: rgb(41, 41, 41);
+    border-left: 8px solid #eee;
+}
+.sidebar .navegacion ul li a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: azure;
+}
+
+.cuenta .seccion{
+    margin-top: 48px;
+}
+
+.cuenta .seccion h1{
+  text-align: center;
+  background-color: #2a2a2a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.1em;
+  font-weight: bold;
+  width: 70%;
+  color: burlywood;
+}
+
+.cuenta .seccion .informacion{
+    width: 70%;
+    background-color: #444;
+    display: block;
+    font-size: 18px;
+}
+
+.cuenta .seccion .informacion ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cuenta .seccion .informacion ul li{
+    list-style: none;
+    margin: 8px 10px;
+    color: #eee;
+    font-weight: bold;
+}
+
+.cuenta .seccion .informacion ul li input[type="button"]{
+  font-size: 15px;
+  width: 75px;
+  height: 30px;
+  background: rgb(94, 94, 20);
+  font-size: 14px;
+  color: #eee;
+  border: 2px solid yellow;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.cuenta .seccion .informacion ul li input[type="button"]:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cuenta .amigos{
+   width: 70%;
+   background-color: #444;
+}
+
+.cuenta .amigos .numeroAmigos h3{
+  text-align: center;
+  background-color: #2a2a2a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.1em;
+  font-weight: bold;
+  width: 100%;
+  color: burlywood;
+} 
+
+.cuenta .amigos .numeroAmigos .all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #444;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.cuenta .amigos .numeroAmigos .all p{
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.cuenta .amigos .numeroAmigos .all p span{
+  font-size: 15px;
+  font-weight: bold;
+  color: orange;
+}
+
+.cuenta .amigos .numeroAmigos .all button{
+    font-size: 15px;
+    width: 75px;
+    height: 30px;
+    background: rgb(30, 50, 116);
+    font-size: 14px;
+    color: #eee;
+    border: 2px solid rgb(17, 0, 255);
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.cuenta .amigos .numeroAmigos .all button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cuenta .amigos .PrimerosAmigos{
+  margin-left: 6px;
+  width: 100%;
+}
+
+.cuenta .amigos .PrimerosAmigos img{
+    -webkit-filter: grayscale(1); /*para mozilla es -moz-, para Opera seria -o-*/
+    -webkit-transition: all .5s ease-in-out;
+     width: 190px;
+     margin: 5px;
+     position: relative;
+}
+
+.cuenta .amigos .PrimerosAmigos img:hover{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1); 
+    cursor: pointer;
+}
+
+article{
+    margin-top: 20px;
+}
+
+article .multimedia nav{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 90px;
+    background-color:  rgb(35, 59, 51);
+    padding: 20px 35px 20px 35px;
+}
+
+article .multimedia nav a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #eee;
+}
+
+article .multimedia nav .aqui{
+   border-bottom: 2px solid white;
+}
+
+article .galeria{
+    background-color: #2a2a2a;
+    border: 3px solid rgb(34, 4, 4);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+article .galeria img{
+    margin: 5px 5px;
+    border: 2px solid #eee;
+}
+article .galeria img:hover{
+    cursor: pointer;
+}
+
+/*Media querys*/
+
+@media only screen and (max-width:989px){
+    .sidebar .image img{
+        width: 240px;
+        padding-right: 5px;
+    }
+    .sidebar{
+        margin-bottom: 150px;
+    }
+}
+
+@media only screen and (max-width:1325px){
+    .sidebar{
+        margin-bottom: 5px;
+    }
+    .cuenta .amigos .PrimerosAmigos img{
+        width: 150px;
+        margin-left: 25px;
+    }
+
+    article .galeria img{
+        width: 140px;
+    }
+    article .galeria{
+        width: 50%;
+    }
+}

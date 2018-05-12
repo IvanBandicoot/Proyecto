@@ -14,6 +14,46 @@ body{
   background-attachment: fixed;
 }
 
+.contenido {
+  width:100%;
+  background-color:rgb(188, 146, 194);
+}
+
+.contenido header .titulo{
+  margin: 10px 30px;
+}
+
+header {
+  width:100%;
+  color:white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+header h1{
+  margin-left: 30px;
+  font-family: 'Graduate', sans-serif;
+  font-size: 40px;
+  color: rgb(20, 7, 90)/*613DC1 00FFF5*/;
+}
+
+header a{
+  margin-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'Ubuntu',sans-serif;
+}
+header a:hover{
+  color:  rgb(20, 7, 90);
+  font-size: 30px;
+  
+}
+
 .formulario{
   width: 100%;
   text-align: center;
