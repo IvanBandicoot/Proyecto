@@ -6,7 +6,7 @@
     box-sizing: border-box;
   }
 body{
-    background-color: rgb(6, 64, 87);
+    background-color: rgb(15, 126, 170);
 }
 
 .contenido {
@@ -58,7 +58,7 @@ header a:hover{
     margin: 50px;
     padding: 10px 10px;
     width: 30%;
-    background-color: rgb(35, 59, 51);
+    background-color: rgb(138, 179, 180);
 }
 
 .sidebar .nombre h2{
@@ -82,7 +82,7 @@ header a:hover{
 
 .sidebar .navegacion{
     text-align: center;
-    background-color: rgb(73, 69, 67);
+    background-color: rgb(37, 51, 114);
     padding: 20px;
 }
 
@@ -117,7 +117,7 @@ header a:hover{
 
 .cuenta .seccion h1{
   text-align: center;
-  background-color: #2a2a2a;
+  background-color: #031831;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.1em;
   font-weight: bold;
@@ -127,7 +127,7 @@ header a:hover{
 
 .cuenta .seccion .informacion{
     width: 70%;
-    background-color: #444;
+    background-color: rgb(79, 52, 109);
     display: block;
     font-size: 18px;
 }
@@ -164,12 +164,12 @@ header a:hover{
 
 .cuenta .amigos{
    width: 70%;
-   background-color: #444;
+   background-color: rgb(52, 37, 82);
 }
 
 .cuenta .amigos .numeroAmigos h3{
   text-align: center;
-  background-color: #2a2a2a;
+  background-color: #261049;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.1em;
   font-weight: bold;
@@ -181,7 +181,7 @@ header a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #444;
+    background-color: rgb(52, 37, 82);
     width: 100%;
     margin: 10px 0px;
 }
@@ -227,6 +227,7 @@ header a:hover{
      width: 190px;
      margin: 5px;
      position: relative;
+     border: 2px solid blue;
 }
 
 .cuenta .amigos .PrimerosAmigos img:hover{
@@ -244,7 +245,7 @@ article .multimedia nav{
     display: flex;
     justify-content: space-between;
     margin: 20px 90px;
-    background-color:  rgb(35, 59, 51);
+    background-color:  rgb(49, 153, 118);
     padding: 20px 35px 20px 35px;
 }
 
@@ -260,7 +261,7 @@ article .multimedia nav .aqui{
 }
 
 article .galeria{
-    background-color: #2a2a2a;
+    background-color: #849ba1;
     border: 3px solid rgb(34, 4, 4);
     width: 60%;
     margin: auto;
