@@ -6,12 +6,12 @@
     box-sizing: border-box;
   }
 body{
-    background-color: rgb(15, 126, 170);
+    background-color: rgba(231, 210, 250, 0.473);
 }
 
 .contenido {
     width:100%;
-    background-color:rgb(188, 146, 194);
+    background-color:rgb(236, 211, 240);
 }
   
 .contenido header .titulo{
@@ -32,7 +32,7 @@ header h1{
     margin-left: 30px;
     font-family: 'Graduate', sans-serif;
     font-size: 40px;
-    color: rgb(20, 7, 90)/*613DC1 00FFF5*/;
+    color: rgb(253, 253, 253)/*613DC1 00FFF5*/;
 }
   
 header a{
@@ -40,13 +40,15 @@ header a{
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Ubuntu',sans-serif;
+    transition: all .3s ease;
 }
 header a:hover{
-    color:  rgb(20, 7, 90);
-    font-size: 30px;
-    
+    color:  rgb(202, 241, 225);
+    font-size: 22px;
+    /*border-bottom: 2px solid rgb(202, 241, 225);*/
+    border-bottom: 2px solid rgb(202, 241, 225);
 }
 
 .contenedor{
@@ -58,7 +60,7 @@ header a:hover{
     margin: 50px;
     padding: 10px 10px;
     width: 30%;
-    background-color: rgb(138, 179, 180);
+    background-color: rgb(218, 190, 229);
 }
 
 .sidebar .nombre h2{
@@ -67,7 +69,7 @@ header a:hover{
      font-size: 30px;
      margin-bottom: 10px;
      text-transform: uppercase;
-     color: rgb(224, 214, 214);
+     color: rgb(37, 37, 37);
      margin-top: 20px;
 }
 
@@ -82,7 +84,7 @@ header a:hover{
 
 .sidebar .navegacion{
     text-align: center;
-    background-color: rgb(37, 51, 114);
+    background-color: rgb(191, 76, 236);
     padding: 20px;
 }
 
@@ -93,6 +95,7 @@ header a:hover{
 
 .sidebar .navegacion ul li{
     list-style: none;
+    background-color: #d9d9db;
     display: block;
     margin: 10px;
     outline: 1px solid #2a2a2a;
@@ -100,15 +103,15 @@ header a:hover{
     transition-duration: 0.3s;
 }
 .sidebar .navegacion ul li:hover{
-    background: rgb(41, 41, 41);
-    border-left: 8px solid #eee;
+    background: rgb(255, 255, 255);
+    border-left: 8px solid rgb(252, 112, 252);
 }
 .sidebar .navegacion ul li a{
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
-    color: azure;
+    color: rgb(0, 0, 0);
 }
 
 .cuenta .seccion{
@@ -117,17 +120,17 @@ header a:hover{
 
 .cuenta .seccion h1{
   text-align: center;
-  background-color: #031831;
+  background-color: #b46ce4;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.1em;
   font-weight: bold;
   width: 70%;
-  color: burlywood;
+  color: rgb(27, 27, 27);
 }
 
 .cuenta .seccion .informacion{
     width: 70%;
-    background-color: rgb(79, 52, 109);
+    background-color: rgb(123, 102, 146);
     display: block;
     font-size: 18px;
 }
@@ -149,10 +152,10 @@ header a:hover{
   font-size: 15px;
   width: 75px;
   height: 30px;
-  background: rgb(94, 94, 20);
+  background: rgb(207, 207, 207);
   font-size: 14px;
-  color: #eee;
-  border: 2px solid yellow;
+  color: rgb(26, 26, 26);
+  border: 2px solid rgb(212, 140, 245);
   font-weight: bold;
   transition: all .3s ease;
 }
@@ -164,24 +167,24 @@ header a:hover{
 
 .cuenta .amigos{
    width: 70%;
-   background-color: rgb(52, 37, 82);
+   background-color: rgb(123, 102, 146);
 }
 
 .cuenta .amigos .numeroAmigos h3{
   text-align: center;
-  background-color: #261049;
+  background-color: #b46ce4;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.1em;
   font-weight: bold;
   width: 100%;
-  color: burlywood;
+  color: rgb(15, 15, 15);
 } 
 
 .cuenta .amigos .numeroAmigos .all{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(52, 37, 82);
+    background-color: rgb(123, 102, 146);
     width: 100%;
     margin: 10px 0px;
 }
@@ -196,17 +199,17 @@ header a:hover{
 .cuenta .amigos .numeroAmigos .all p span{
   font-size: 15px;
   font-weight: bold;
-  color: orange;
+  color: rgb(253, 253, 253);
 }
 
 .cuenta .amigos .numeroAmigos .all button{
     font-size: 15px;
     width: 75px;
     height: 30px;
-    background: rgb(30, 50, 116);
+    background: rgba(189, 78, 233, 0.486);
     font-size: 14px;
     color: #eee;
-    border: 2px solid rgb(17, 0, 255);
+    border: 2px solid rgb(244, 207, 252);
     font-weight: bold;
     transition: all .3s ease;
 }
@@ -227,7 +230,7 @@ header a:hover{
      width: 190px;
      margin: 5px;
      position: relative;
-     border: 2px solid blue;
+     border: 2px solid rgb(207, 123, 228);
 }
 
 .cuenta .amigos .PrimerosAmigos img:hover{
@@ -245,7 +248,8 @@ article .multimedia nav{
     display: flex;
     justify-content: space-between;
     margin: 20px 90px;
-    background-color:  rgb(49, 153, 118);
+    border-radius: 17px;
+    background-color:  rgb(236, 211, 240);
     padding: 20px 35px 20px 35px;
 }
 
@@ -253,16 +257,16 @@ article .multimedia nav a{
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  color: #eee;
+  color: rgb(0, 0, 0);
 }
 
 article .multimedia nav .aqui{
-   border-bottom: 2px solid white;
+   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 article .galeria{
-    background-color: #849ba1;
-    border: 3px solid rgb(34, 4, 4);
+    background-color: #ffffff;
+    border: 3px solid rgb(0, 0, 0);
     width: 60%;
     margin: auto;
     text-align: center;
@@ -272,7 +276,7 @@ article .galeria{
 
 article .galeria img{
     margin: 5px 5px;
-    border: 2px solid #eee;
+    border: 2px solid rgb(0, 0, 0);
 }
 article .galeria img:hover{
     cursor: pointer;

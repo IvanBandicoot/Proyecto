@@ -24,7 +24,7 @@ body{
 }
 .contenedor {
   width:100%;
-  background-color:rgb(188, 146, 194);
+  background-color:rgb(236, 211, 240);
 }
 
 .contenedor header .titulo{
@@ -45,7 +45,7 @@ header h1{
   margin-left: 30px;
   font-family: 'Graduate', sans-serif;
   font-size: 40px;
-  color: rgb(20, 7, 90)/*613DC1 00FFF5*/;
+  color: rgb(255, 255, 255)/*613DC1 00FFF5*/;
 }
 
 header a{
@@ -53,18 +53,22 @@ header a{
   text-align: center;
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Ubuntu',sans-serif;
+  transition: all .6s ease;
 }
 header a:hover{
-  color:  rgb(20, 7, 90);
-  font-size: 30px;
+  color:  rgb(202, 241, 225);
+  font-size: 22px;
+  /*border-bottom: 2px solid rgb(202, 241, 225);*/
+  border-left: 5px solid rgb(202, 241, 225);
   
 }
+
 .login-box {
 width: 320px;
 height: 420px;
-background: rgba(200, 196, 253, 0.5);
+background: rgba(236, 200, 243, 0.548);
 color: #fff;
 top: 60%;
 left: 50%;
@@ -88,7 +92,7 @@ margin: 0;
 padding: 0 0 20px;
 text-align: center;
 font-size: 22px;
-color: rgb(20, 7, 90);
+color: rgb(248, 248, 255);
 }
 
 .login-box label {
@@ -117,15 +121,16 @@ font-size: 16px;
 border: none;
 outline: none;
 height: 40px;
-background: #6CD4FF;
+background: rgb(157, 212, 236);
 color: #000;
 font-size: 18px;
-border-radius: 20px;
+border-radius: 10px;
+transition: all .3s ease;
 }
 
 .login-box input[type="submit"]:hover {
 cursor: pointer;
-background: #3F88C5;
+background: rgb(148, 181, 209);
 color: rgb(255, 255, 255);
 }
 
