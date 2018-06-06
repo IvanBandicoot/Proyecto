@@ -24,7 +24,7 @@ body{
 }
 .contenedor {
   width:100%;
-  background-color:rgb(236, 211, 240);
+  background-color:#8D86C9;
 }
 
 .contenedor header .titulo{
@@ -58,17 +58,17 @@ header a{
   transition: all .6s ease;
 }
 header a:hover{
-  color:  rgb(202, 241, 225);
+  color:  rgb(255, 255, 255);
   font-size: 22px;
   /*border-bottom: 2px solid rgb(202, 241, 225);*/
-  border-left: 5px solid rgb(202, 241, 225);
+  
   
 }
 
 .login-box {
 width: 320px;
 height: 420px;
-background: rgba(236, 200, 243, 0.548);
+background: rgba(234, 221, 236, 0.548);
 color: #fff;
 top: 60%;
 left: 50%;

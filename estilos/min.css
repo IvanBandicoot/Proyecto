@@ -8,15 +8,16 @@
 }
 
 body{
-  background: rgba(231, 210, 250, 0.473);
+  background: rgba(231, 231, 231, 0.822);
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
+  font-family:'Ubuntu', sans-serif;
 }
 
 .contenido {
   width:100%;
-  background-color:rgb(236, 211, 240);
+  background-color:#8D86C9;
 }
 
 .contenido header .titulo{
@@ -51,10 +52,10 @@ header a{
 }
 
 header a:hover{
-  color:  rgb(202, 241, 225);
+  color:  rgb(255, 255, 255);
   font-size: 22px;
   /*border-bottom: 2px solid rgb(202, 241, 225);*/
-  border-left: 5px solid rgb(202, 241, 225);
+  
   
 }
 
@@ -65,7 +66,7 @@ header a:hover{
 }
 .contenedor{
   width: 400px;
-  background-color: rgb(206, 143, 235);
+  background-color: #9BBDF9;
   margin: auto;
   padding: 10px 10px;
   opacity: 0.8;
@@ -74,9 +75,9 @@ header a:hover{
 
 h2{
   margin-bottom: 14px;
-  font-family: sans-serif;
+  font-family:'Ubuntu', sans-serif;;
   font-size: 1.2em;
-  color: rgb(248, 247, 246);
+  color: rgb(0, 0, 0);
 }
 
 p{
@@ -106,14 +107,15 @@ h2 span{
 
 .formulario .contenedor .main .registro input{
   border: none;
-  border-bottom: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(109, 108, 108);
   background: transparent;
-  color: #ffffff;
+  color: #000000;
   opacity:10;
   width: 300px;
   outline: none;
   margin-bottom: 8px;
   font-size: 18px;
+  font-family:'Ubuntu', sans-serif;
 }
 
 .formulario .contenedor .main .fecha .data{
@@ -130,23 +132,24 @@ input{
    width: 180px;
    height: 30px;
    background-color: #da78e717;
-   color: rgb(252, 252, 252);
-   font-size: 15px;
+   color: rgb(8, 8, 8);
+   font-size: 19px;
    font-weight: bold;
-   border: 2px solid rgb(158, 29, 209);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border: 2px solid rgb(87, 17, 134);;
+   font-family:'Ubuntu', sans-serif;
    text-transform: uppercase;
    transition: all .3s ease;
 }
 
 .formulario .contenedor .main .buton button:hover{
-  background: rgb(182, 94, 209);
+  background: #355691;
   border: 2px solid rgb(255, 254, 253); 
+  color: white; 
   cursor: pointer;
 }
 
 .formulario .contenedor .main input:focus{
   border: none;
-  border-bottom: 2px solid rgb(203, 29, 209);
+  border-bottom: 2px solid rgb(87, 17, 134);
   
 }
