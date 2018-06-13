@@ -79,22 +79,79 @@
     </div><!--fin del contenedor-->
 
     <article>
-        <div class="multimedia">
-           <nav>
-               <a href="">Videos</a>
-               <a href="" class="aqui">Fotos</a>
-               <a href="">SoundCloud</a>
-               <a href="">Albumes</a>
-           </nav>
-        </div>
-        <div class="galeria">
-            <img src="img/imagenesperfil/images.jpg" alt="">
-            <img src="img/imagenesperfil/paisaje2.jpg" alt="">
-            <img src="img/imagenesperfil/paisaje3.jpg" alt="">
-            <img src="img/imagenesperfil/paisaje4.jpg" alt="">
-            <img src="img/imagenesperfil/paisaje5.jpg" alt="">
-            <img src="img/imagenesperfil/paisaje6.jpg" alt="">
-        </div>    
+        <section>
+            <ul id="lista">
+             <li class="filtro" ><a href="#galeria">Albumes</a></li>       
+             <li class="filtro" ><a href="#imagen">Imagenes</a></li>   
+             <li class="filtro" ><a href="#voz">Audio</a></li>
+             <li class="filtro" ><a href="#videoo">Video</a></li>
+            </ul>
+         </section>
+         
+       <ul class="galeria" id="galeria">
+         <li><a href="#img1"><img src="img/audio.jpg"></a></li>
+         <li><a href="#img1"><img src="img/sonido.png"></a></li>
+         <li><a href="#img2"><img src="img/video.jpg"></a></li>
+         <li><a href="#img1"><img src="img/videocamara.jpg"></a></li>
+         <li><a href="#img3"><img src="img/foto.jpg"></a></li>
+         <li><a href="#img4"><img src="img/camara.jpg"></a></li>
+       </ul>
+       
+       <div class="modal" id="img1">
+           <h3>Paisaje 1</h3>
+           <div class="imagen">
+             <a href="#img4">&#60;</a>
+             <a href="#img2"><img src="img/audio.jpg" width="350" height="200" ></a>
+             <a href="img/audio.jpg"></a>
+             <a href="#img2">></a>
+          </div>
+           <a class="cerrar" href="">X</a>
+       </div>
+         
+           <div class="modal" id="img2">
+           <h3>Paisaje 2</h3>
+           <div class="imagen">
+             <a href="#img1">&#60;</a>
+             <a href="#img3"><img src="img/video.jpg" width="350" height="200" ></a>
+             <a href="#img3">></a>
+          </div>
+           <a class="cerrar" href="">X</a>
+          </div>
+         
+           <div class="modal" id="img3">
+           <h3>Paisaje 3</h3>
+           <div class="imagen">
+             <a href="#img2">&#60;</a>
+             <a href="#img4"><img src="img/foto.jpg" width="350" height="200" ></a>
+             <a href="#img4">></a>
+          </div>
+           <a class="cerrar" href="">X</a>      
+       </div>
+         
+         <div class="modal" id="img4">
+           <h3>Paisaje 4</h3>
+           <div class="imagen">
+             <a href="#img3">&#60;</a>
+             <a href="#img1"><img src="img/camara.jpg" width="350" height="200" ></a>
+             <a href="#img1">></a>
+           </div>
+           <a class="cerrar" href="">X</a>
+         </div>
+         
+       <ul class="multimedia" id="imagen">
+         <li><a href="#img3"><img src="img/foto.jpg"></a></li>
+         <li><a href="#img4"><img src="img/camara.jpg"></a></li>
+       </ul>
+       <ul class="multimedia" id="videoo">
+         <li><a href="#img3"><img src="img/video.jpg"></a></li>
+         <li><a href="#img4"><img src="img/videocamara.jpg"></a></li>
+       </ul>
+       <ul class="multimedia" id="voz">
+         <li><a href="#img3"><img src="img/audio.jpg"></a></li>
+         <li><a href="#img4"><img src="img/sonido.png"></a></li>
+       </ul>
+       
+ </div>   
     </article>
 </body>
 </html>

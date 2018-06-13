@@ -18,7 +18,7 @@
           </header>
       </div>
 
-  <form class="formulario" for="form" name="formu" ng-model="formulario">
+  <form class="formulario" id="formulario" for="form" name="formu" ng-model="formulario">
 
    <div class="contenedor" ng-controller="Controlador">
 
@@ -78,7 +78,8 @@
         <div class="buton">
           <button type="submit"
                   ng-disabled="formu.$invalid"
-                  class="boton">
+                  class="boton"
+                  id="registrar">
             REGISTRAR
           </button>
         </div>
@@ -93,8 +94,15 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script> 
-      $(function(){
-        
+      $(document).on('ready',function(){
+        $('#registrar').click(function(){
+          var url = "";
+          $.ajax({
+            type: "GET",
+            url: url,
+            data: $('#formulario')
+          })
+        });
       });
   </script>
 </form>

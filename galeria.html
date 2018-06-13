@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SocialSearch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Graduate" rel="stylesheet">
+  <link rel="stylesheet"  media="screen" href="estilos/gallery.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+</head>
+    
+<body>
+
+    <div class="contenido">
+        <header>
+          <div>
+           <h1 class="titulo"> <img src="img/navesita.png" alt="navesita"> SocialSearch</h1>
+           <input type="text" placeholder="Buscar..." name="buscar">
+           <nav>
+              <a href=""><i class="fa fa-user"></i></a>
+              <a href=""><i class="fa fa-user-friends"></i></a>
+              <a href=""><i class="fa fa-cogs"></i></a>
+           </nav>
+          </div>
+          </header>
+      </div>
+
+
+  <div class="container">
+          <section>
+             <ul id="lista">
+              <li class="filtro" ><a href="#galeria">Ver multimetidia</a></li>       
+              <li class="filtro" ><a href="#imagen">Imagenes</a></li>   
+              <li class="filtro" ><a href="#voz">Audio</a></li>
+              <li class="filtro" ><a href="#videoo">Video</a></li>
+             </ul>
+          </section>
+          
+        <ul class="galeria" id="galeria">
+          <li><a href="#img1"><img src="img/audio.jpg"></a></li>
+          <li><a href="#img1"><img src="img/sonido.png"></a></li>
+          <li><a href="#img2"><img src="img/video.jpg"></a></li>
+          <li><a href="#img1"><img src="img/videocamara.jpg"></a></li>
+          <li><a href="#img3"><img src="img/foto.jpg"></a></li>
+          <li><a href="#img4"><img src="img/camara.jpg"></a></li>
+        </ul>
+        
+        <div class="modal" id="img1">
+            <h3>Paisaje 1</h3>
+            <div class="imagen">
+              <a href="#img4">&#60;</a>
+              <a href="#img2"><img src="img/audio.jpg" width="350" height="200" ></a>
+              <a href="img/audio.jpg"></a>
+              <a href="#img2">></a>
+           </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+          
+            <div class="modal" id="img2">
+            <h3>Paisaje 2</h3>
+            <div class="imagen">
+              <a href="#img1">&#60;</a>
+              <a href="#img3"><img src="img/video.jpg" width="350" height="200" ></a>
+              <a href="#img3">></a>
+           </div>
+            <a class="cerrar" href="">X</a>
+           </div>
+          
+            <div class="modal" id="img3">
+            <h3>Paisaje 3</h3>
+            <div class="imagen">
+              <a href="#img2">&#60;</a>
+              <a href="#img4"><img src="img/foto.jpg" width="350" height="200" ></a>
+              <a href="#img4">></a>
+           </div>
+            <a class="cerrar" href="">X</a>      
+        </div>
+          
+          <div class="modal" id="img4">
+            <h3>Paisaje 4</h3>
+            <div class="imagen">
+              <a href="#img3">&#60;</a>
+              <a href="#img1"><img src="img/camara.jpg" width="350" height="200" ></a>
+              <a href="#img1">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+          </div>
+          
+        <ul class="multimedia" id="imagen">
+          <li><a href="#img3"><img src="img/foto.jpg"></a></li>
+          <li><a href="#img4"><img src="img/camara.jpg"></a></li>
+        </ul>
+        <ul class="multimedia" id="videoo">
+          <li><a href="#img3"><img src="img/video.jpg"></a></li>
+          <li><a href="#img4"><img src="img/videocamara.jpg"></a></li>
+        </ul>
+        <ul class="multimedia" id="voz">
+          <li><a href="#img3"><img src="img/audio.jpg"></a></li>
+          <li><a href="#img4"><img src="img/sonido.png"></a></li>
+        </ul>
+        
+  </div>
+      
+   <script src="JavaScript/main.js">
+      // alert("hola");
+   </script>
+</body>
+</html>
