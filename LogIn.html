@@ -19,7 +19,7 @@
         <div class="login-box">
           <img src="img/astronaut.png" class="logo" alt="logo Image">
           <h2>Iniciar Sesión</h2>
-          <form>
+          <form id="formulario">
               
             <!-- USERNAME INPUT -->
             <label for="username">Correo</label>
@@ -28,15 +28,32 @@
             <!-- PASSWORD INPUT -->
             <label for="password">Contraseña</label>
             <input type="password" placeholder="Enter Password">
-            <input type="submit" value="Iniciar Sesión">
+            <input type="submit" id="iniciar" value="Iniciar Sesión">
             <a href="#">Olvidaste tu contraseña?</a><br>
             <a href="perfiluser.html">Asi se vera tu perfil de usuario</a>
+            <div id="respuesta"> 
+
+            </div>
           </form>
         </div>
         <div id="particles-js"></div>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
         <script type="" src="Javascript/particles.js"></script>
         <script type="" src="Javascript/app.js"></script>
-                    
+        <script>
+        $(document).on('ready',function(){
+        $('#iniciar').click(function(){
+          var url = "http://proyecto-ing.herokuapp.com/users";
+          $.ajax({
+            type: "GET",
+            url: url,
+            data: $('#formulario').serialize(),
+            success: function(data){
+                    $('#respuesta').html(response);
+            }
+          })
+        });
+      });
+        </script>            
 </body>
 </html>
